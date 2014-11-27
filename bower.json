@@ -1,0 +1,29 @@
+{
+  "name": "lovciweb",
+  "version": "0.0.0",
+  "authors": [
+    "Terrell6 <hladik.rudolf@gmail.com>"
+  ],
+  "description": "web swtor guildy lovci lebek",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "platform": "~1.2.0",
+    "polymer": "~0.4.2",
+    "core-icon": "Polymer/core-icon#~0.4.2",
+    "core-iconset": "Polymer/core-iconset#~0.4.2",
+    "core-iconset-svg": "Polymer/core-iconset-svg#~0.4.2",
+    "core-toolbar": "Polymer/core-toolbar#~0.4.2",
+    "paper-icon-button": "Polymer/paper-icon-button#~0.4.2",
+    "paper-progress": "Polymer/paper-progress#~0.4.2",
+    "core-elements": "Polymer/core-elements#~0.4.2"
+  }
+}

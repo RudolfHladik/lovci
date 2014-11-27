@@ -1,0 +1,132 @@
+
+body {
+	background-image: url('res/img/main.jpg');
+	/*background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
+    
+
+}
+core-header-panel{
+
+}
+
+
+core-header-panel[mode=cover]::shadow #mainContainer{
+	/*background-image: url('res/img/main.jpg');*/
+
+	/*background-color: #CCA;*/
+	/*left: 180px;*/
+}
+core-toolbar.tall{
+	
+	background-image: url('res/img/main_header.jpg');
+	
+	
+	/*background-color: red;*/
+	
+	
+}
+core-toolbar.tall > .row{
+	
+	visibility: hidden;
+	
+	
+}
+core-toolbar.tall > .middle> .column{
+	visibility: visible;
+	
+	
+	
+	
+}
+
+
+core-toolbar > .middle > .column{
+	visibility: hidden;
+	
+	
+}
+core-toolbar {
+
+	background-image: url('res/img/main.jpg');
+	/* background-color: white; */
+	
+	}
+
+core-toolbar > .row{
+		visibility: visible;
+	}
+
+
+core-header{
+	/*background-color: #AAA;*/
+}
+paper-button{
+	height: 26px;
+	width: 100px;
+	background-color: #AAA;
+	color: black;
+	font-size: 12px;
+	
+}
+paper-button:hover{
+
+	z-index: 2;
+	}
+
+.content {
+	margin: 100px 10vw 20vh 10vw;
+}
+.white {
+	height: 2000px;
+	
+}
+.grey {
+	height: 1240px;
+	background-image: url(res/img/invis_50perc.png);
+	
+	 
+}
+.myapp {
+	color: black;
+	height: 30px;
+}
+.myapp > a:hover{
+	padding-left: 30px;
+}
+.row{
+	padding-left: 120px;
+	
+	
+		
+}
+.column{
+	margin-left: 10px;
+}
+
+.center{
+	background-color: green;
+}
+
+core-animated-pages{
+	height: 100vh;
+}
+
+#page1 {
+	margin: 0px 10vw 20vh 10vw;
+	height: 2000px;
+	background-image: url(res/img/invis_50perc.png);
+}
+
+#page2 {
+	background-image: url(res/img/invis_blue.png);
+	margin: 0px 10vw 20vh 10vw;
+	height: 2000px;
+}
+#tes1{
+	background: ;
+
+}
+
+

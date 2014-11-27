@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>		
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<script src="bower_components/platform/platform.js">
+	</script>
+	<link rel="import" href="elements.html">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title></title>
+</head>
+<body fullbleed layout vertical unresolved>
+	<core-header-panel flex mode="waterfall-tall">
+	<core-toolbar>
+		
+		
+			<span flex class="row"><!-- 
+					<span >row1</span>
+					<span >row2</span>
+					<span >row3</span>
+					<span >row3</span>
+					<span >row4</span>
+					<span >row5</span>
+					<span >row6</span> -->
+					<div horizontal around-justified layout>
+						<div><paper-button raised id="test1">Home</paper-button></div>
+						<div><paper-button raised id="test2">Menu 1</paper-button></div>
+						<div><paper-button raised on-click="click()">Menu 2</paper-button></div>
+						<div><paper-button raised on-click="click()">Menu 3</paper-button></div>
+						<div><paper-button raised on-click="click()">Menu 4</paper-button></div>
+						<div><paper-button raised on-click="click()">Menu 5</paper-button></div>
+						<div><paper-button raised on-click="click()">Menu 6</paper-button></div>
+
+					</div>
+			</span>
+		
+			<div class="middle">
+				<div class="column">
+				
+					
+				
+					
+					
+					<div  class="myapp"><paper-button id="tes1" noripple>Home</paper-button></div>
+					<div  class="myapp"><paper-button noink raised="false" id="tes2" >Menu1</paper-button></div>
+					<div  class="myapp"><paper-button id="tes3">Menu2</paper-button></div>
+					<div  class="myapp"><paper-button id="tes4">Menu3</paper-button></div>
+					<div  class="myapp"><paper-button id="tes5">Menu4</paper-button></div>
+					<div  class="myapp"><paper-button id="tes6">Menu5</paper-button></div>
+
+					
+					<!-- <div  class="myapp"><a href="">Progress</a></div>
+					<div  class="myapp"><a href="">Gallery</a></div> -->
+				</div>
+			</div>
+			
+				
+			
+		</core-toolbar>
+
+		<div class="content">
+			
+				<core-animated-pages transitions="hero-transition slide-from-right">
+				  <section id="page1" class="core-selected">
+				   <div class="white"><paper-button raised> <div class="title">Home<p id="demo"></p></div> </paper-button></div>
+				  </section>
+				  <section id="page2">
+				    <div class="grey"><div class="title">Menu1</div></div> 
+				  </section>
+				  <section id="page3">
+				    <div class="white"><div class="title">Menu2</div></div> 
+				  </section>
+				  <section id="page4">
+				    <div class="white"><div class="title">Menu3</div></div> 
+				  </section>
+				  <section id="page5">
+				    <div class="white"><div class="title">Menu4</div></div> 
+				  </section>
+				  <section id="page6">
+				    <div class="white"><div class="title">Menu5</div></div> 
+				  </section>
+				  <section id="page7">
+				    <div class="white"><div class="title">Menu6</div></div> 
+				  </section>
+				  
+				</core-animated-pages>
+			
+			
+			
+			
+			
+			
+
+		</div>
+	</core-header-panel>
+	
+<script>
+document.querySelector('#test1').addEventListener('click', function(e) {
+console.log(5+6);	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 0;
+    
+  })
+
+document.querySelector('#test2').addEventListener('click', function(e) {
+console.log(6+6);	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 1;	
+    
+  })
+
+document.querySelector('#tes1').addEventListener('click', function(e) {
+console.log(5+6);	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 0;
+    
+  })
+
+document.querySelector('#tes2').addEventListener('click', function(e) {
+console.log(6+6);	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 1;	
+    
+  })
+
+	/*function click(){
+		var button = document.querySelector("paper-button");
+		var value = "test";
+		console.log(value);
+		var p = document.querySelector("core-animated-pages");
+		if(value!= null){
+			p.transitions = "cross-fade-all";
+			  p.selected += 1;
+			
+
+		}
+
+
+console.log(5+6);		
+	}
+*/
+
+</script>
+	
+</body>
+</html>
