@@ -125,13 +125,14 @@ core-animated-pages{
 	height: 2000px;
 }
 #tes1{
-	background: blue;
+
+
+	background-color: red ;
+
 
 }
-
-
 #tes2{
-	background: green;
-
-
+	background-color: #4105BCFF ;
+	
 }
+
