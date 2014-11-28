@@ -1,0 +1,88 @@
+:host {
+	display: inline-block;
+	width:300px;
+	height:300px;
+	font-family:Verdana, Helvetica;
+	font-size:14px;
+	background:white;
+}
+
+* { box-sizing: border-box;}
+
+div#calendar {
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
+	display:-webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow:hidden;
+}
+
+div#calendar div {
+	display:-webkit-flex;
+	-webkit-flex:1;
+	display: -ms-flexbox;
+	-ms-flex:1;
+	text-align:center;
+	display:flex;
+	flex:1;
+	border-collapse:collapse;
+	-webkit-user-select:none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+core-icon {
+	color:DarkGray;
+}
+
+div.head img {
+	width:100%;
+}
+
+div.head div#date {
+	flex:7;
+	-webkit-flex:7;
+	-ms-flex:7;
+}
+
+div.row div {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	-webkit-justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	align-items: center;
+}
+
+div.day:hover {
+	background:#ccc;
+}
+
+div.today {
+	font-weight:bold;
+	color:tomato;
+}
+
+div.d1 {
+	background: antiquewhite;
+}
+
+div.head: {
+	background: var(head-bg);
+}
+
+div.disable {
+	background: lightgray;
+}
+
+div.selected {
+	background: dodgerBlue;
+	font-weight:bold;
+}
