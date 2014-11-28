@@ -24,13 +24,13 @@
 					<span >row5</span>
 					<span >row6</span> -->
 					<div horizontal around-justified layout>
-						<div><paper-button raised id="test1">Home</paper-button></div>
-						<div><paper-button raised id="test2">Menu 1</paper-button></div>
-						<div><paper-button raised on-click="click()">Menu 2</paper-button></div>
-						<div><paper-button raised on-click="click()">Menu 3</paper-button></div>
-						<div><paper-button raised on-click="click()">Menu 4</paper-button></div>
-						<div><paper-button raised on-click="click()">Menu 5</paper-button></div>
-						<div><paper-button raised on-click="click()">Menu 6</paper-button></div>
+						<div><paper-button id="test1">Home</paper-button></div>
+						<div><paper-button id="test2">Menu 1</paper-button></div>
+						<div><paper-button >Menu 2</paper-button></div>
+						<div><paper-button on-click="click()">Menu 3</paper-button></div>
+						<div><paper-button on-click="click()">Menu 4</paper-button></div>
+						<div><paper-button on-click="click()">Menu 5</paper-button></div>
+						<div><paper-button on-click="click()">Menu 6</paper-button></div>
 
 					</div>
 			</span>
@@ -43,7 +43,7 @@
 					
 					
 					<div  class="myapp"><paper-button id="tes1" noripple>Home</paper-button></div>
-					<div  class="myapp"><paper-button noink raised="false" id="tes2" >Menu1</paper-button></div>
+					<div  class="myapp"><paper-button id="tes2" >Menu1</paper-button></div>
 					<div  class="myapp"><paper-button id="tes3">Menu2</paper-button></div>
 					<div  class="myapp"><paper-button id="tes4">Menu3</paper-button></div>
 					<div  class="myapp"><paper-button id="tes5">Menu4</paper-button></div>
@@ -63,10 +63,11 @@
 			
 				<core-animated-pages transitions="hero-transition slide-from-right">
 				  <section id="page1" class="core-selected">
-				   <div class="white"><paper-button raised> <div class="title">Home<p id="demo"></p></div> </paper-button></div>
+				   <div class="white"><paper-button noink> <div class="title">Home<p id="demo"></p></div> </paper-button></div>
 				  </section>
 				  <section id="page2">
 				    <div class="grey"><div class="title">Menu1</div></div> 
+				    <my-test-content></my-test-content>
 				  </section>
 				  <section id="page3">
 				    <div class="white"><div class="title">Menu2</div></div> 
