@@ -20,7 +20,7 @@ core-header-panel[mode=cover]::shadow #mainContainer{
 }
 core-toolbar.tall{
 	
-	background-image: url('res/img/main_header.jpg');
+	/* background-image: url('res/img/main_header.jpg'); */
 	
 	
 	/*background-color: red;*/
@@ -60,13 +60,12 @@ core-toolbar > .row{
 
 
 core-header{
-	/*background-color: #AAA;*/
+	
 }
 paper-button{
 	height: 26px;
 	width: 100px;
-	background-color: #AAA;
-	color: black;
+	color: #f4f4f4;
 	font-size: 12px;
 	
 }
@@ -83,8 +82,8 @@ paper-button:hover{
 	
 }
 .grey {
-	height: 1240px;
-	background-image: url(res/img/invis_50perc.png);
+	
+	
 	
 	 
 }
@@ -125,12 +124,12 @@ core-animated-pages{
 	height: 2000px;
 }
 #tes1{
-	background-color: red ;
+	
 
 
 }
 #tes2{
-	background-color: #4105BCFF ;
+	
 	
 
 }
