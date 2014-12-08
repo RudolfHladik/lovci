@@ -14,7 +14,7 @@
 	<core-header-panel flex mode="waterfall-tall">
 	<core-toolbar>
 		
-		
+
 			<span flex class="row"><!-- 
 					<span >row1</span>
 					<span >row2</span>
@@ -24,13 +24,14 @@
 					<span >row5</span>
 					<span >row6</span> -->
 					<div horizontal around-justified layout>
-						<div><paper-button id="test1">Home</paper-button></div>
+						<div><paper-button id="test0">Home</paper-button></div>
+						<div><paper-button id="test1">Calendar</paper-button></div>
 						<div><paper-button id="test2">Menu 1</paper-button></div>
-						<div><paper-button >Menu 2</paper-button></div>
-						<div><paper-button on-click="click()">Menu 3</paper-button></div>
-						<div><paper-button on-click="click()">Menu 4</paper-button></div>
-						<div><paper-button on-click="click()">Menu 5</paper-button></div>
-						<div><paper-button on-click="click()">Menu 6</paper-button></div>
+						<div><paper-button id="test3">Menu 2</paper-button></div>
+						<div><paper-button id="test4">Menu 3</paper-button></div>
+						<div><paper-button id="test5">Menu 4</paper-button></div>
+						
+						
 
 					</div>
 			</span>
@@ -41,13 +42,13 @@
 					
 				
 					
-					
-					<div  class="myapp"><paper-button id="tes1" noripple>Home</paper-button></div>
-					<div  class="myapp"><paper-button id="tes2" >Menu1</paper-button></div>
+					<div  class="myapp"><paper-button id="tes0">Home</paper-button></div>
+					<div  class="myapp"><paper-button id="tes1">Calendar</paper-button></div>
+					<div  class="myapp"><paper-button id="tes2">Menu1</paper-button></div>
 					<div  class="myapp"><paper-button id="tes3">Menu2</paper-button></div>
 					<div  class="myapp"><paper-button id="tes4">Menu3</paper-button></div>
 					<div  class="myapp"><paper-button id="tes5">Menu4</paper-button></div>
-					<div  class="myapp"><paper-button id="tes6">Menu5</paper-button></div>
+					
 
 					
 					<!-- <div  class="myapp"><a href="">Progress</a></div>
@@ -61,29 +62,27 @@
 
 		<div class="content">
 			
-				<core-animated-pages transitions="hero-transition slide-from-right">
-				  <section id="page1" class="core-selected">
-				   <div class="white"><paper-button noink> <div class="title">Home<p id="demo"></p></div> </paper-button></div>
+				<core-animated-pages transitions="cross-fade-all">
+				  <section id="page0" class="core-selected">
+					<my-test-content>page 0</my-test-content>
+				  </section>	
+				  <section id="page1" >
+				  	<zdk-calendar><zdk-input-date name="startdate" value="2014-11-15"></zdk-input-date></zdk-calendar>
 				  </section>
 				  <section id="page2">
-				    <div class="grey"><div class="title">Menu1</div></div> 
-				    <my-test-content></my-test-content>
+				    <my-test-content>page 2</my-test-content>
 				  </section>
 				  <section id="page3">
-				    <div class="white"><div class="title">Menu2</div></div> 
+				  	<my-test-content>page 3</my-test-content>
 				  </section>
 				  <section id="page4">
-				    <div class="white"><div class="title">Menu3</div></div> 
+				 	<my-test-content>page 4</my-test-content>  
 				  </section>
 				  <section id="page5">
-				    <div class="white"><div class="title">Menu4</div></div> 
+				 	<my-test-content>page 5</my-test-content>
 				  </section>
-				  <section id="page6">
-				    <div class="white"><div class="title">Menu5</div></div> 
-				  </section>
-				  <section id="page7">
-				    <div class="white"><div class="title">Menu6</div></div> 
-				  </section>
+				  
+				 
 				  
 				</core-animated-pages>
 			
@@ -97,33 +96,80 @@
 	</core-header-panel>
 	
 <script>
-document.querySelector('#test1').addEventListener('click', function(e) {
-console.log(5+6);	
+
+// COLUMN BUTTONS
+document.querySelector('#test0').addEventListener('click', function(e) {
+
 var p = document.querySelector("core-animated-pages");	
 	p.selected = 0;
+
+    
+  })
+document.querySelector('#test1').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 1;
     
   })
 
-document.querySelector('#test2').addEventListener('click', function(e) {
-console.log(6+6);	
+document.querySelector('#test3').addEventListener('click', function(e) {	
 var p = document.querySelector("core-animated-pages");	
-	p.selected = 1;	
+	p.selected = 2;	
+    
+  })
+document.querySelector('#test4').addEventListener('click', function(e) {	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 3;	
+    
+  })
+document.querySelector('#test5').addEventListener('click', function(e) {	
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 4;	
+    
+  })
+
+
+// ROW BUTTONS
+document.querySelector('#tes0').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 0;
     
   })
 
 document.querySelector('#tes1').addEventListener('click', function(e) {
-console.log(5+6);	
-var p = document.querySelector("core-animated-pages");	
-	p.selected = 0;
-    
-  })
 
-document.querySelector('#tes2').addEventListener('click', function(e) {
-console.log(6+6);	
 var p = document.querySelector("core-animated-pages");	
 	p.selected = 1;	
     
   })
+document.querySelector('#tes2').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 2;	
+    
+  })
+
+document.querySelector('#tes3').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 3;
+    
+  })
+
+document.querySelector('#tes4').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 4;	
+    
+  })
+document.querySelector('#tes5').addEventListener('click', function(e) {
+
+var p = document.querySelector("core-animated-pages");	
+	p.selected = 5;	
+    
+  })
+
 
 	/*function click(){
 		var button = document.querySelector("paper-button");
