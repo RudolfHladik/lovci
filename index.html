@@ -7,6 +7,7 @@
 	</script>
 	<link rel="import" href="elements.html">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:900,400italic,100,300,400' rel='stylesheet' type='text/css'>
 
 	<title></title>
 </head>
@@ -26,10 +27,10 @@
 					<div horizontal around-justified layout>
 						<div><paper-button id="test0">Home</paper-button></div>
 						<div><paper-button id="test1">Calendar</paper-button></div>
-						<div><paper-button id="test2">Menu 1</paper-button></div>
-						<div><paper-button id="test3">Menu 2</paper-button></div>
-						<div><paper-button id="test4">Menu 3</paper-button></div>
-						<div><paper-button id="test5">Menu 4</paper-button></div>
+						<div><paper-button id="test2">My projects</paper-button></div>
+						<div><paper-button id="test3">Dev tools</paper-button></div>
+						<div><paper-button id="test4">About me</paper-button></div>
+						
 						
 						
 
@@ -44,10 +45,10 @@
 					
 					<div  class="myapp"><paper-button id="tes0">Home</paper-button></div>
 					<div  class="myapp"><paper-button id="tes1">Calendar</paper-button></div>
-					<div  class="myapp"><paper-button id="tes2">Menu1</paper-button></div>
-					<div  class="myapp"><paper-button id="tes3">Menu2</paper-button></div>
-					<div  class="myapp"><paper-button id="tes4">Menu3</paper-button></div>
-					<div  class="myapp"><paper-button id="tes5">Menu4</paper-button></div>
+					<div  class="myapp"><paper-button id="tes2">My projects</paper-button></div>
+					<div  class="myapp"><paper-button id="tes3">Dev tools</paper-button></div>
+					<div  class="myapp"><paper-button id="tes4">About me</paper-button></div>
+					
 					
 
 					
@@ -62,9 +63,18 @@
 
 		<div class="content">
 			
-				<core-animated-pages transitions="cross-fade-all">
+				<core-animated-pages transitions="hero transition slide-from-right">
 				  <section id="page0" class="core-selected">
-					<my-test-content>page 0</my-test-content>
+					
+				  	<div id="home_content">
+				  	<H1>RUDOLF </H1><H1> HLADÍK </H1>
+				  	<p><h2>Android developer</h2>
+				  	<h2>            enthusiast</h2></p>
+					<div class="warning"><core-icon icon="warning"></core-icon></div>
+					<p>Site under construction</p>
+					</div>
+					
+
 				  </section>	
 				  <section id="page1" >
 				  	<zdk-calendar><zdk-input-date name="startdate" value="2014-11-15"></zdk-input-date></zdk-calendar>
@@ -111,22 +121,24 @@ var p = document.querySelector("core-animated-pages");
 	p.selected = 1;
     
   })
+document.querySelector('#test2').addEventListener('click', function(e) {
 
-document.querySelector('#test3').addEventListener('click', function(e) {	
 var p = document.querySelector("core-animated-pages");	
-	p.selected = 2;	
+	p.selected = 2;
     
   })
-document.querySelector('#test4').addEventListener('click', function(e) {	
+
+document.querySelector('#test3').addEventListener('click', function(e) {	
 var p = document.querySelector("core-animated-pages");	
 	p.selected = 3;	
     
   })
-document.querySelector('#test5').addEventListener('click', function(e) {	
+document.querySelector('#test4').addEventListener('click', function(e) {	
 var p = document.querySelector("core-animated-pages");	
 	p.selected = 4;	
     
   })
+
 
 
 // ROW BUTTONS
@@ -163,12 +175,7 @@ var p = document.querySelector("core-animated-pages");
 	p.selected = 4;	
     
   })
-document.querySelector('#tes5').addEventListener('click', function(e) {
 
-var p = document.querySelector("core-animated-pages");	
-	p.selected = 5;	
-    
-  })
 
 
 	/*function click(){
